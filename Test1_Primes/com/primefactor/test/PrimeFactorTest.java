@@ -41,4 +41,9 @@ public class PrimeFactorTest {
 	public void factorsOfNegativeNumbersAreNothing () {
 		assertEquals(Arrays.asList(), factor.getFactor(-1));
 	}
+	
+	@Test
+	public void factorOfFiveIsFive () {
+		assertEquals(Arrays.asList(5), factor.getFactor(5));
+	}
 }
