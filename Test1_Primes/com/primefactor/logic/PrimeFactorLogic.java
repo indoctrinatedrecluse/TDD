@@ -10,12 +10,16 @@ public class PrimeFactorLogic {
 		ArrayList<Integer> primeFactors = new ArrayList<>();
 		if (number<2)
 			return primeFactors;
-		while (number%2 == 0) {
-			primeFactors.add(2);
-			number/=2;
+		
+		int testFactor = 2;
+		
+		while (number>1) {
+			while (number%testFactor == 0) {
+				primeFactors.add(testFactor);
+				number/=testFactor;
+			}
+			testFactor++;
 		}
-		if (number%3 == 0)
-			primeFactors.add(3);
 		
 		return primeFactors;
 	}
