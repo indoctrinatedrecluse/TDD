@@ -36,4 +36,9 @@ public class PrimeFactorTest {
 	public void factorsOfFourAreTwoTwos () {
 		assertEquals(Arrays.asList(2, 2), factor.getFactor(4));
 	}
+	
+	@Test
+	public void factorsOfNegativeNumbersAreNothing () {
+		assertEquals(Arrays.asList(), factor.getFactor(-1));
+	}
 }
