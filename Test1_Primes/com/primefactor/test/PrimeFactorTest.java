@@ -46,4 +46,9 @@ public class PrimeFactorTest {
 	public void factorOfFiveIsFive () {
 		assertEquals(Arrays.asList(5), factor.getFactor(5));
 	}
+	
+	@Test
+	public void factorOfRandomNumber () {
+		assertEquals(Arrays.asList(3, 3, 7, 17, 37, 41), factor.getFactor(1624707));
+	}
 }
