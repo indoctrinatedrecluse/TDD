@@ -11,7 +11,8 @@ public class PrimeFactorLogic {
 		
 		if (number==2)
 			primeFactors.add(2);
-		
+		if (number==3)
+			primeFactors.add(3);
 		return primeFactors;
 	}
 }
