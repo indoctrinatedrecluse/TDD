@@ -12,6 +12,7 @@ public class PrimeFactorLogic {
 			return primeFactors;
 		while (number%2 == 0) {
 			primeFactors.add(2);
+			number/=2;
 		}
 		if (number%3 == 0)
 			primeFactors.add(3);
