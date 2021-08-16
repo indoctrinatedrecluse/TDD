@@ -1,5 +1,9 @@
 package com.primefactor.test;
 
+import static org.junit.Assert.assertEquals;
+
+import java.util.Arrays;
+
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -15,6 +19,6 @@ public class PrimeFactorTest {
 	
 	@Test
 	public void factorOfZeroIsNothing () {
-		factor.getFactor();
+		assertEquals(Arrays.asList(), factor.getFactor(0));
 	}
 }
