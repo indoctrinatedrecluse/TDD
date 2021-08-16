@@ -21,4 +21,9 @@ public class PrimeFactorTest {
 	public void factorOfZeroIsNothing () {
 		assertEquals(Arrays.asList(), factor.getFactor(0));
 	}
+	
+	@Test
+	public void factorOfTwoIsTwo () {
+		assertEquals(Arrays.asList(2), factor.getFactor(2));
+	}
 }
