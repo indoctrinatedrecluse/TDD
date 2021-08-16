@@ -7,6 +7,11 @@ import java.util.List;
 public class PrimeFactorLogic {
 	
 	public List<Integer> getFactor(int number) {
-		return new ArrayList<>();
+		ArrayList<Integer> primeFactors = new ArrayList<>();
+		
+		if (number==2)
+			primeFactors.add(2);
+		
+		return primeFactors;
 	}
 }
