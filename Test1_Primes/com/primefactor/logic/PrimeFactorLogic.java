@@ -8,17 +8,11 @@ public class PrimeFactorLogic {
 	
 	public List<Integer> getFactor(int number) {
 		ArrayList<Integer> primeFactors = new ArrayList<>();
-		if (number<2)
-			return primeFactors;
 		
-		int testFactor = 2;
-		
-		while (number>1) {
-			while (number%testFactor == 0) {
+		for (int testFactor = 2; number > 1; testFactor++) {
+			for ( ; number % testFactor == 0; number /= testFactor) {
 				primeFactors.add(testFactor);
-				number/=testFactor;
 			}
-			testFactor++;
 		}
 		
 		return primeFactors;
